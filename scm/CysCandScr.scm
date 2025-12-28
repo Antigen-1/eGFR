@@ -1,3 +1,10 @@
+(print-signature "CysCandScr2eGFR" 
+                 '(("age" "int")
+                   ("gender" "\"male\"/\"female\"")
+                   ("CysC" "mg/L")
+                   ("Scr" "mg/dl"))
+                 '("eGFR" "ml/(minx1.73m^2)"))
+
 (define eGFR 
     (lambda (age gender CysC Scr)
         (let ((A none)
