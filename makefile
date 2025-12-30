@@ -1,5 +1,5 @@
 PYTHON=python
-JSON_FILES=json/CysCandScr.json json/Scr.json json/Ccr.json
+JSON_FILES=json/CysCandScr.json json/Scr.json json/Ccr.json json/K.json
 
 .PHONY: run, all, clean
 
@@ -13,7 +13,7 @@ core.py:
 	rkt-pythonize -c > $@
 
 run: $(JSON_FILES) core.py
-	$(PYTHON) -i eGFR.py
+	$(PYTHON) -i calc.py
 
 clean:
 	-rm -rf json/ __pycache__/ core.py
